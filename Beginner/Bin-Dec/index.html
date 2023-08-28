@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Binário para Decimal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body style="font-family: 'PT Sans', sans-serif; font-size:20px; margin: 0">
+    <header style="text-align:center; padding: 30px 0px; position: relative; top: 0; left:0; width:100%; background-color:rgb(219, 233, 249)">
+        <p>Binário para Decimal</p>
+    </header>
+
+    <main style="margin: 100px 0; display:flex; flex-direction: column; align-items: center; justify-content:center">
+        <div style="padding: 80px 50px; border-radius: 5px; border: 0.5px black solid;">
+            <div class="field">
+                <p class="control">
+                    <label for="bin">Insira o Binário :</label>
+                    <input class="input" type="text" pattern="[0-9]+" name="bin" id="bin" placeholder="Ex: 01011">
+                </p>
+            </div>
+            <div class="field is-grouped is-grouped-right">
+                <p class="control ">
+                    <button class="button" onclick="Converter()">Converter</button>
+                </p>
+            </div>
+            <div id="out" style="margin: 50px 0px; font-weight: bold; font-size: 20pt"></div>
+        </div>
+    </main>
+
+    <footer style="text-align:center; padding: 50px 0px; position: absolute; bottom: 0; left:0; width:100%; background-color:rgb(219, 233, 249)">
+          <p>
+            <strong>Binário para Decimal</strong> by Gian. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>. The website content
+            is licensed.
+            <a href="https://github.com/gianfiamoncini04/AppIdeas" target="_blank">GITHUB</a>
+          </p>
+      </footer>
+      <script src="./index.js"></script>
+</body>
+</html>

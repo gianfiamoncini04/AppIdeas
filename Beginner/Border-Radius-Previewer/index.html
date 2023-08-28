@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Border-radius Previewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body style="font-family: 'PT Sans', sans-serif; font-size:20px; margin: 0">
+    <header style="text-align:center; padding: 30px 0px; position: relative; top: 0; left:0; width:100%; background-color:rgb(219, 233, 249)">
+        <p>Border-radius Previewer</p>
+    </header>
+
+    <main style="margin: 100px 0; display:flex; flex-direction: column; align-items: center; justify-content:center">
+        <div style="padding: 50px 50px; border: 0.5px black solid;" id="preview">
+            <div class="field">
+                <p class="control" style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); grid-column-gap: 40px; grid-row-gap: 5px;">
+                    <label style="grid-area: 1 / 1 / 2 / 2; margin-bottom: 50px" for="border">top-left:</label>
+                    <input style="width: 100px; grid-area: 1 / 1 / 2 / 2;" oninput="Mudar()" type="range" value="0" step="10" name="border" id="top-left">
+                    <label style="grid-area: 1 / 2 / 2 / 3; margin-bottom: 50px " for="border">top-right :</label>
+                    <input style="width: 100px; grid-area: 1 / 2 / 2 / 3; " oninput="Mudar()" type="range" value="0" step="10" name="border" id="top-right">
+                    <label style="grid-area: 2 / 1 / 3 / 2; margin-bottom: 50px " for="border">bottom-left:</label>
+                    <input style="width: 100px; grid-area: 2 / 1 / 3 / 2; " oninput="Mudar()" type="range" value="0" step="10" name="border" id="bottom-left">
+                    <label style="grid-area: 2 / 2 / 3 / 3; margin-bottom: 50px" for="border">bottom-right:</label>
+                    <input style="width: 100px; grid-area: 2 / 2 / 3 / 3;" oninput="Mudar()" type="range" value="0" step="10" name="border" id="bottom-right">
+                </p>
+            </div>
+            <div class="field is-grouped is-grouped-centered">
+                <p class="control ">
+                    <button onclick="Copy()" class="button">Copy code CSS</button>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer style="text-align:center; padding: 50px 0px; position: absolute; bottom: 0; left:0; width:100%; background-color:rgb(219, 233, 249)">
+          <p>
+            <strong>Border-radius Previewer</strong> by Gian. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>. The website content
+            is licensed.
+            <a href="https://github.com/gianfiamoncini04/AppIdeas" target="_blank">GITHUB</a>
+          </p>
+      </footer>
+      <script src="./index.js"></script>
+</body>
+</html>
